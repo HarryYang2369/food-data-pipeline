@@ -20,3 +20,8 @@ REQUEST_DELAY_MAX = 5.0
 # Claude API（可选，用于结构化提取）
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 USE_CLAUDE_EXTRACTION = bool(ANTHROPIC_API_KEY)
+
+# Yelp Fusion API（可选，用于丰富餐厅数据）
+# 免费，每天 500 次请求，无需信用卡
+# 申请地址：https://www.yelp.com/developers/ → Create App → API Key
+YELP_API_KEY = os.getenv("YELP_API_KEY", "")
